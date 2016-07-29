@@ -16,7 +16,7 @@ public class Triangle {
         return i == n;
     }
 
-    private static void printSeparator(int i, int n) {
+    private static void printNewLineInDependenceOfIndex(int i, int n) {
         if(!isLastIndex(i, n))
             printNewline();
     }
@@ -28,14 +28,14 @@ public class Triangle {
     public static void printVerticalLine(int n) {
         IntStream.rangeClosed(1, n).forEach(i -> {
             printAsterisk();
-            printSeparator(i, n);
+            printNewLineInDependenceOfIndex(i, n);
         });
     }
 
     public static void printRightTriangle(int n) {
         IntStream.rangeClosed(1, n).forEach(i -> {
             printHorizontalLine(i);
-            printSeparator(i, n);
+            printNewLineInDependenceOfIndex(i, n);
         });
     }
 }
