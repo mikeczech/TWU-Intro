@@ -24,7 +24,7 @@ public class FizzBuzzTest {
     @Test
     public void testFizzBuzz() throws Exception {
         FizzBuzz.fizzBuzz(15);
-        assertEquals("1\n2\nFizz\n4\nBuzz\nFizz\n7\n8\nFizz\nBuzz\n11\nFizz\n13\n14\nFizzBuzz", outContent.toString());
+        assertEquals("1\n2\nFizz\n4\nBuzz\nFizz\n7\n8\nFizz\nBuzz\n11\nFizz\n13\n14\nFizzBuzz\n", outContent.toString());
     }
 
 }
