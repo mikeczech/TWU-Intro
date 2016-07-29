@@ -19,8 +19,8 @@ public class DiamondTest {
 
     @Test
     public void testPrintIsoscelesTriangle() {
-        Diamond.printIsocelesTriangle(3);
-        assertEquals("  *\n ***\n*****", outContent.toString());
+        Diamond.printIsoscelesTriangle(3);
+        assertEquals("  *\n ***\n*****\n", outContent.toString());
     }
 
 }
