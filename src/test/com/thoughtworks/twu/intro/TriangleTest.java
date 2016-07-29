@@ -19,19 +19,19 @@ public class TriangleTest {
     @Test
     public void testPrintHorizontalLine() {
         Triangle.printHorizontalLine(8);
-        assertEquals("********", outContent.toString());
+        assertEquals("********\n", outContent.toString());
     }
 
     @Test
     public void testPrintVerticalLine() {
         Triangle.printVerticalLine(3);
-        assertEquals("*\n*\n*", outContent.toString());
+        assertEquals("*\n*\n*\n", outContent.toString());
     }
 
     @Test
     public void testPrintRightTriangle() {
         Triangle.printRightTriangle(3);
-        assertEquals("*\n**\n***", outContent.toString());
+        assertEquals("*\n**\n***\n", outContent.toString());
 
     }
 
