@@ -14,7 +14,7 @@ public class Diamond {
         IntStream.range(0, n).forEach(i -> System.out.print(" "));
     }
 
-    public static void printIsoscelesTriangle(int n, boolean reversed) {
+    public static void printIsoscelesTriangle(int n, boolean reversed, boolean shift) {
         Stream<Integer> whitespaceCounts = IntStream.iterate(n-1, i -> i - 1).limit(n).boxed();
         Stream<Integer> asteriskCounts = IntStream.iterate(1, i -> i + 2).limit(n).boxed();
         List<Pair<Integer,Integer>> zipped =
@@ -22,13 +22,17 @@ public class Diamond {
         if(reversed)
             Collections.reverse(zipped);
         zipped.forEach(pair -> {
-            printWhitespaces(pair.fst);
+            if(shift)
+                printWhitespaces(pair.fst + 1);
+            else
+                printWhitespaces(pair.fst);
             Triangle.printHorizontalLine(pair.snd);
         });
     }
 
     public static void printDiamond(int n) {
-
-
+        printIsoscelesTriangle(n - 1, false, true);
+        Triangle.printHorizontalLine(n + 2);
+        printIsoscelesTriangle(n - 1, true, true);
     }
 }

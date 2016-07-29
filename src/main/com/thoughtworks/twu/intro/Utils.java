@@ -14,9 +14,4 @@ public class Utils {
         return bs.filter(x->i.hasNext()).map(b->new Pair<>(i.next(), b));
     }
 
-    public static <T> Stream<T> streamInReverse(T[] input) {
-        return IntStream.range(1, input.length + 1).mapToObj(
-                i -> input[input.length - i]);
-    }
-
 }
