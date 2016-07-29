@@ -13,19 +13,19 @@ public class Triangle {
     }
 
     public static void printHorizontalLine(int n) {
-        IntStream.range(0, n).forEach(i -> printAsterisk());
+        IntStream.rangeClosed(1, n).forEach(i -> printAsterisk());
     }
 
     public static void printVerticalLine(int n) {
-        IntStream.range(0, n).forEach(i -> {
+        IntStream.rangeClosed(1, n).forEach(i -> {
             printAsterisk();
-            if(i < n-1)
+            if(i < n)
                 printNewline();
         });
     }
 
     public static void printRightTriangle(int n) {
-        IntStream.range(1, n+1).forEach(i -> {
+        IntStream.rangeClosed(1, n).forEach(i -> {
             printHorizontalLine(i);
             if(i < n)
                 printNewline();
