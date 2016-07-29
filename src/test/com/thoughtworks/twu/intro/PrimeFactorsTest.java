@@ -12,7 +12,7 @@ public class PrimeFactorsTest {
     @Test
     public void testFactorizationWithEmptyResult() {
         List<Integer> factors = PrimeFactors.factorize(0);
-        assertTrue(factors.isEmpty())
+        assertTrue(factors.isEmpty());
     }
 
     @Test
