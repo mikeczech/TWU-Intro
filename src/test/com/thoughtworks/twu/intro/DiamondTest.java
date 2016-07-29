@@ -23,4 +23,10 @@ public class DiamondTest {
         assertEquals("  *\n ***\n*****\n", outContent.toString());
     }
 
+    @Test
+    public void testPrintDiamond() {
+        Diamond.printDiamond(3);
+        assertEquals("  *\n ***\n*****\n ***\n  *", outContent.toString());
+    }
+
 }
