@@ -14,6 +14,10 @@ public class Diamond {
         IntStream.range(0, n).forEach(i -> System.out.print(" "));
     }
 
+    private static void printMyName() {
+        System.out.println("Mike");
+    }
+
     public static void printIsoscelesTriangle(int n, boolean reversed, boolean shift) {
         Stream<Integer> whitespaceCounts = IntStream.iterate(n-1, i -> i - 1).limit(n).boxed();
         Stream<Integer> asteriskCounts = IntStream.iterate(1, i -> i + 2).limit(n).boxed();
@@ -37,5 +41,8 @@ public class Diamond {
     }
 
     public static void printDiamondWithName(int n) {
+        printIsoscelesTriangle(n - 1, false, true);
+        printMyName();
+        printIsoscelesTriangle(n - 1, true, true);
     }
 }
