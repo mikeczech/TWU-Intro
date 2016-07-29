@@ -18,6 +18,7 @@ public class Diamond {
         System.out.println("Mike");
     }
 
+    // TODO refactor this
     public static void printIsoscelesTriangle(int n, boolean reversed, boolean shift) {
         Stream<Integer> whitespaceCounts = IntStream.iterate(n-1, i -> i - 1).limit(n).boxed();
         Stream<Integer> asteriskCounts = IntStream.iterate(1, i -> i + 2).limit(n).boxed();
