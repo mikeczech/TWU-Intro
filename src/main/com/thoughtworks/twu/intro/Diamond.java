@@ -22,4 +22,7 @@ public class Diamond {
         });
     }
 
+    public static void printDiamond(int i) {
+
+    }
 }
