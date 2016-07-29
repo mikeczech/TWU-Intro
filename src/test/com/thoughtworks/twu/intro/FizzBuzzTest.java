@@ -9,9 +9,6 @@ import java.io.PrintStream;
 
 import static org.junit.Assert.*;
 
-/**
- * Created by zenscr on 29/07/16.
- */
 public class FizzBuzzTest {
 
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
