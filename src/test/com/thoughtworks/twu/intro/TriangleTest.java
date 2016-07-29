@@ -25,7 +25,7 @@ public class TriangleTest {
     @Test
     public void testPrintVerticalLine() {
         Triangle.printVerticalLine(3);
-        assertEquals("*\n*\n*\n", outContent.toString());
+        assertEquals("*\n*\n*", outContent.toString());
     }
 
     @Test

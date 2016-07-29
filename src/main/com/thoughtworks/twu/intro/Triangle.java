@@ -19,7 +19,8 @@ public class Triangle {
     public static void printVerticalLine(int n) {
         IntStream.range(0, n).forEach(i -> {
             printAsterisk();
-            printNewline();
+            if(i < n-1)
+                printNewline();
         });
     }
 
