@@ -35,4 +35,7 @@ public class Diamond {
         Triangle.printHorizontalLine(n + 2);
         printIsoscelesTriangle(n - 1, true, true);
     }
+
+    public static void printDiamondWithName(int n) {
+    }
 }
