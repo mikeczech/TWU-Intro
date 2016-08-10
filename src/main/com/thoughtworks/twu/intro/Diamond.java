@@ -43,16 +43,16 @@ public class Diamond {
     }
 
     private static List<Pair<Integer, Integer>> computeWhitespaceAndAsteriskNumbersForNLines(int n) {
-        Stream<Integer> whitespaceCounts = computeWhitespaceCountsForNLines(n).boxed();
-        Stream<Integer> asteriskCounts = computeAsteriskCountsForNLines(n).boxed();
+        Stream<Integer> whitespaceCounts = computeWhitespaceNumbersForNLines(n).boxed();
+        Stream<Integer> asteriskCounts = computeAsteriskNumbersForNLines(n).boxed();
         return Utils.zip(whitespaceCounts, asteriskCounts).collect(Collectors.toList());
     }
 
-    private static IntStream computeWhitespaceCountsForNLines(int n) {
+    private static IntStream computeWhitespaceNumbersForNLines(int n) {
         return IntStream.iterate(n-1, i -> i - 1).limit(n);
     }
 
-    private static IntStream computeAsteriskCountsForNLines(int n) {
+    private static IntStream computeAsteriskNumbersForNLines(int n) {
         return IntStream.iterate(1, i -> i + 2).limit(n);
     }
 
