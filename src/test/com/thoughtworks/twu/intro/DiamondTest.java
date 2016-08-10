@@ -19,7 +19,7 @@ public class DiamondTest {
 
     @Test
     public void testPrintIsoscelesTriangle() {
-        Diamond.printIsoscelesTriangle(3, false, false);
+        Diamond.printIsocelesTriangleOfSize(3);
         assertEquals("  *\n ***\n*****\n", outContent.toString());
     }
 
