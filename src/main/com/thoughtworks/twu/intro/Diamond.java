@@ -11,12 +11,12 @@ import java.util.stream.Stream;
 public class Diamond {
 
     public static void printDiamond(int n) {
-        printShiftedIsocelesTrangle(n - 1);
+        printShiftedIsocelesTrangleOfSize(n - 1);
         Triangle.printHorizontalLine(n + 2);
-        printReversedAndShiftedIsocelesTriangle(n - 1);
+        printReversedAndShiftedIsocelesTriangleOfSize(n - 1);
     }
 
-    private static void printShiftedIsocelesTrangle(int n) {
+    private static void printShiftedIsocelesTrangleOfSize(int n) {
         printIsoscelesTriangle(n, 1, false);
     }
 
@@ -24,7 +24,7 @@ public class Diamond {
         printIsoscelesTriangle(n, 0, false);
     }
 
-    private static void printReversedAndShiftedIsocelesTriangle(int n) {
+    private static void printReversedAndShiftedIsocelesTriangleOfSize(int n) {
         printIsoscelesTriangle(n, 1, true);
     }
 
@@ -57,9 +57,9 @@ public class Diamond {
     }
 
     public static void printDiamondWithName(int n) {
-        printShiftedIsocelesTrangle(n - 1);
+        printShiftedIsocelesTrangleOfSize(n - 1);
         printMyName();
-        printReversedAndShiftedIsocelesTriangle(n - 1);
+        printReversedAndShiftedIsocelesTriangleOfSize(n - 1);
     }
 
     private static void printMyName() {
